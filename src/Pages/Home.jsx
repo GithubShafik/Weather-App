@@ -21,7 +21,7 @@ const Home = () => {
     
     const fetchWeatherData = async (query)=>{
         const apiKey = 'ef89e392885a42b2a0c114030241601';
-        const baseUrl = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${query}&days=2`;
+        const baseUrl = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${query}&days=2`;
         try{
             const res = await fetch(baseUrl);
             const data = await res.json();
